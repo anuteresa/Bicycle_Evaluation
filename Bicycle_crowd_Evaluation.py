@@ -133,7 +133,6 @@ for i, inner_l in enumerate(indexlist):
             for index2, values in enumerate(value):
                 if index1 == i and index2 == indexlist[i][j]:
                     badannotators = badannotlist[index1][index2]
-
                     badannotators_list.append(badannotators)
 
 print("14. No of times where annotators gave wrong answer:", len(badannotators_list))
@@ -149,7 +148,6 @@ plt.pie(sizes, explode=explode, labels=labels, colors=colors,
         autopct='%1.1f%%', shadow=True, startangle=140)
 plt.axis('equal')
 plt.title("Total percentage of Good and Bad annotations")
-
 plt.show(block=False)
 plt.pause(3)
 plt.close()
