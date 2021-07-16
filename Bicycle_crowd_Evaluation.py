@@ -54,7 +54,6 @@ y = np.array([is_bicycle.count(True), is_bicycle.count(False)])
 x = np.array(["True", "False"])
 c = ['green', 'red']
 
-
 def addlabels(x, y):
     for i in range(len(x)):
         plt.text(i, y[i], y[i])
